@@ -196,43 +196,6 @@ const HomepageLayout = ({ children }) => (
     <Segment style={{ padding: "8em 0em" }} vertical>
       {children}
     </Segment>
-
-    <Segment
-      inverted
-      vertical
-      style={{
-        padding: "5em 0em",
-        position: "fixed",
-        bottom: 0,
-        width: "100%"
-      }}
-    >
-      <Container>
-        <Grid divided inverted stackable>
-          <Grid.Row>
-            <Grid.Column width={3}>
-              <Header inverted as="h4" content="About" />
-              <List link inverted>
-                <List.Item as="a">Sitemap</List.Item>
-                <List.Item as="a">Contact Us</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as="h4" content="Services" />
-              <List link inverted>
-                <List.Item as="a">DNA FAQ</List.Item>
-                <List.Item as="a">How To Access</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={7}>
-              <Header as="h4" inverted>
-                Footer Header
-              </Header>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </Container>
-    </Segment>
   </ResponsiveContainer>
 );
 
