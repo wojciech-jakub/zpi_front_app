@@ -55,6 +55,7 @@ export const useLogin = () => {
         history.replace(from);
       } catch (ex) {
         dispatch({ type: ActionTypes.SET_ERROR, payload: ex });
+        window.location.reload();
       }
     },
     [dispatch]
