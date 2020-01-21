@@ -37,7 +37,7 @@ const useFileUpload = file => {
   const { state } = useContext(SessionContext);
   const uploadAction = useCallback(async () => {
     setLoading(true);
-    const image = `${new Date().getTime().toString()}".jpg"`;
+    const image = `${new Date().getTime().toString()}.jpg`;
     const body = {
       token: state.session.body,
       image_name: image,
